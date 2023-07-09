@@ -1,0 +1,36 @@
+{% extends 'home.html' %}
+{% block inicio %}
+<div class="exterior-body">
+    <div class="container-body">
+        <div class="col mx-auto">
+            <form action="POST">
+                <div class="row mx-auto ">
+                    <div class="col-6 mx-auto p-2">
+                        <label for="inputEmail4" class="form-label"> Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre completo" aria-label="First name">
+                    </div>
+                    <div class="col-6 mx-auto p-2">
+                        <label for="inputEmail4" class="form-label"> Apellido</label>
+
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-6 mx-auto p-2">
+                        <label for="inputEmail4" class="form-label"> Celular</label>
+                        <input type="text" class="form-control" placeholder="Fijo o celular" aria-label="First name">
+                    </div>
+                    <div class="col-6 mx-auto p-2">
+                        <label for="inputEmail4" class="form-label">Pais</label>
+                        <input type="text" class="form-control" placeholder="Pais" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="col-4 mx-auto py-2">
+                    <button class=" col-12 btn btn-primary" type="submit">Enviar datos</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

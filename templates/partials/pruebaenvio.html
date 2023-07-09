@@ -1,0 +1,36 @@
+{% extends 'home.html' %}
+{% block prueba %}
+<link rel="stylesheet" href="../../static/css/prueba.css">
+
+<div class="exterior-body">
+    <div class="container-body">
+        <div class="col mx-auto">
+            <form action="/prueba" method="POST">
+                <div class="row mx-auto ">
+                    <div class="col-6 mx-auto p-2">
+                        <label for="inputEmail4" class="form-label"> Cedula</label>
+                        <input type="text" class="form-control" placeholder="Nombre completo" name="cedula" aria-label="First name">
+                    </div>
+                    <div class="col-6 mx-auto p-2">
+                        <label for="inputEmail4" class="form-label"> Nombre</label>
+                        <input type="text" class="form-control" placeholder="Apellido" name="nombre"  aria-label="Last name">
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-6 mx-auto p-2">
+                        <label for="inputEmail4" class="form-label"> Apellido</label>
+                        <input type="text" class="form-control" placeholder="Fijo o celular" name="apellido" aria-label="First name">
+                    </div>
+                    <div class="col-6 mx-auto p-2">
+                        <label for="inputEmail4" class="form-label">Pais</label>
+                        <input type="text" class="form-control" placeholder="Pais" name="pais" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="col-4 mx-auto py-2">
+                    <button class=" col-12 btn btn-primary" type="submit">Enviar datos</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
